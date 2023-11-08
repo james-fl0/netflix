@@ -1,0 +1,41 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Selection</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/profiles.css' %}" />
+</head>
+<body>
+
+<div class="profile-container">
+    <h1>Who's watching?</h1>
+    <div class="profiles">
+        
+        
+        <div class="profile">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Profile Image">
+            <div class="profile-name">Profile 1</div>
+        </div>
+        
+        <div class="profile">
+            <img src="https://wallpapers.com/images/hd/netflix-profile-pictures-5yup5hd2i60x7ew3.jpg" alt="Profile Image">
+            <div class="profile-name">Profile 2</div>
+        </div>
+        
+        <div class="profile">
+            <img src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-dyrp6bw6adbulg5b.jpg" alt="Profile Image">
+            <div class="profile-name">Profile 3</div>
+        </div>
+        
+        
+    </div>
+    <button class="manage-btn">Manage Profiles</button>
+</div>
+
+</body>
+</html>
