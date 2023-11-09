@@ -8,11 +8,13 @@ ENV PYTHONUNBUFFERED 1
 RUN apk update && apk add gcc python3-dev musl-dev
 
 RUN pip install --upgrade pip
-COPY ./requirements.txt /usr/src/app/requirements.txt
+COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 
-COPY netflix_clone /usr/src/app/
-COPY entrypoint.sh /usr/src/app
+COPY netflix_clone .
+COPY entrypoint.sh .
+
+RUN ["chmod", "+x", "entrypoint.sh"]
 
 EXPOSE 8000
 
